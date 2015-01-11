@@ -14,3 +14,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+.DS_Store
+
+
+# Keep database.yml in gitignore and only check in database.yml.example
+/config/database.yml
