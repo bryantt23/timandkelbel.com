@@ -1,0 +1,40 @@
+/*
+
+HEADER
+---------------------------------------------------------
+
+*/
+
+.site__header {
+  background: rgba(white, .95);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transform: translate3d(0,0,0);
+  padding: $spacing-xs 0;
+  transition: padding 0.2s;
+}
+.scrolled {
+  .site__header {
+    padding: $spacing-xs/2 0;
+  }
+  .logo img {
+    height: 32px;
+  }
+  .site__navigation {
+    margin: 4px 0 0;
+  }
+}
+
+.navigation {
+  text-align: center;
+  @extend %sans;
+  li {
+    display: inline;
+    font-size: .95em;
+    // font-weight: 900;
+    margin: 0 $spacing-xs;
+    text-transform: uppercase;
+  }
+}

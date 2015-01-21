@@ -5,14 +5,26 @@
 
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-    %title= content_for?(:title) ? yield(:title) : "Untitled"
+    %title= content_for?(:title) ? yield(:title) : "Tim and Kelbel"
 
     = stylesheet_link_tag "application"
     = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tag
 
+    // Typekit Code
+    %script{:src => "//use.typekit.net/luv2tui.js"}
+    :javascript
+      try{Typekit.load();}catch(e){}
+
   %body
 
+    = render 'shared/header'
+
     = yield
+
+    / = image_tag "https://goodstufffm.s3.amazonaws.com/uploads/broadcast/image/28/theeastwing_artwork.png"
+    / # = image_tag "https://goodstufffm.s3.amazonaws.com/uploads/broadcast/image/28/theeastwing_artwork.png"
+    / # = image_tag "https://goodstufffm.s3.amazonaws.com/uploads/broadcast/image/28/theeastwing_artwork.png"
+
 

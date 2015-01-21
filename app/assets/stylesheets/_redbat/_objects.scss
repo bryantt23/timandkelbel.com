@@ -4,3 +4,16 @@ OBJECTS
 -------------------------------------------
 
 */
+
+.with-picture-bg {
+  position: relative;
+  .row {
+    position: absolute;
+  }
+}
+
+.bottom-aligned {
+  bottom: $spacing-s;
+  right: 12%;
+  left: 12%;
+}

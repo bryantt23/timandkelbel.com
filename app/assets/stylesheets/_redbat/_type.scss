@@ -32,6 +32,7 @@ body {
 	font-size: 110%;
 	line-height: 140%;
 	// color: $bodyColor;
+  @extend %serif;
 }
 
 // TYPE SIZE VARIABLES
@@ -53,13 +54,13 @@ $text-size-xl: 2em;
 FONTS
 ------------------------------------------- */
 
-// %sans {
-// 	font-family: ;
-// }
+%sans {
+  font-family: "proxima-nova-condensed",sans-serif;
+}
 
-// %serif {
-// 	font-family: ;
-// }
+%serif {
+  font-family: "chaparral-pro",sans-serif;
+}
 
 
 /*
