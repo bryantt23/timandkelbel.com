@@ -5,15 +5,75 @@ MAIN CONTENT
 
 */
 
+.site__statement {
+  background: url(image-path("timandkel-temp.jpg")) no-repeat;
+  background-size: cover;
+  padding: 50% 0 2%;
+}
+
 .statement {
-  color: white;
+  color: rgba(white, .8);
   font-size: 4em;
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 130%;
+  text-transform: uppercase;
   @extend %sans;
 }
 
 .statement-sub {
-  color: white;
-  font-size: 2.5em;
+  color: rgba(white, .5);
+  font-size: 1.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+  @extend %sans;
 }
 
+
+/*
+OUR STORY ---------------------------------- */
+
+.section__story {
+  h3 {
+    font-size: 2.75em;
+    font-weight: 300;
+    small {
+      color: #999;
+      display: block;
+      margin: 0 0 10px;
+      font-size: 45%;
+      // font-weight: 300;
+      text-transform: uppercase;
+      @extend %sans;
+    }
+  }
+}
+
+/*
+WEDDING PARTY ------------------------------ */
+
+.section__wedding-party {
+  background: $darkColor;
+  .section-title {
+    color: $linkColor;
+  }
+  .inline-list {
+    font-size: 1.15em;
+    font-weight: 300;
+    li {
+      color: white;
+      &:first-child {
+        color: $linkColor;
+        text-transform: uppercase;
+        @extend %sans;
+      }
+    }
+  }
+}
+
+/*
+WEDDING DETAILS ---------------------------- */
+
+.row__details {
+  margin-top: $spacing-m;
+}

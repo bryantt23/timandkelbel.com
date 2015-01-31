@@ -31,7 +31,7 @@ BASE TYPE
 body {
 	font-size: 110%;
 	line-height: 140%;
-	// color: $bodyColor;
+	color: $bodyColor;
   @extend %serif;
 }
 
@@ -62,11 +62,35 @@ FONTS
   font-family: "chaparral-pro",sans-serif;
 }
 
+%decorative {
+  font-family: "lust-script",sans-serif;
+}
+
 
 /*
 
 HEADINGS
 ------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4b4b4b;
+}
+
+.section-title {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin: 0 0 $spacing-xs;
+  text-transform: uppercase;
+  @extend %sans;
+}
+
+h4 {
+  font-size: 1.15em;
+}
 
 
 /*
@@ -81,7 +105,12 @@ INLINE TYPE
 ------------------------------------------- */
 
 strong {
-	font-weight: bold;
+  color: #555;
+  font-weight: bold;
+  em {
+   font-weight: 700;
+   font-style: italic;
+  }
 }
 
 em {
