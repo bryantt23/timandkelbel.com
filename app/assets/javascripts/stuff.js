@@ -1,4 +1,4 @@
-(function($, window){
+$(document).ready(function($, window){
 
     var $w = $(window);
     var $body = $('body');
