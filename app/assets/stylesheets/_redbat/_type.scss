@@ -90,6 +90,7 @@ h6 {
 
 h4 {
   font-size: 1.15em;
+  margin-top: 20px;
 }
 
 
@@ -149,6 +150,13 @@ hr {
 LINKS
 ------------------------------------------- */
 
+a {
+  color: $linkColor;
+  @include transition(.2s ease);
+  &:hover, &:focus {
+    color: darken($linkColor, 10%);
+  }
+}
 
 /*
 

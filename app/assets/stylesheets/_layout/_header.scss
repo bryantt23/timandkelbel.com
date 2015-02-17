@@ -12,29 +12,30 @@ HEADER
   width: 100%;
   z-index: 9999;
   transform: translate3d(0,0,0);
-  padding: $spacing-xs 0;
+  padding: $spacing-xxs 0;
   transition: padding 0.2s;
 }
 .scrolled {
   .site__header {
     padding: $spacing-xs/2 0;
   }
-  .logo img {
-    height: 32px;
-  }
   .site__navigation {
     margin: 4px 0 0;
   }
+}
+
+.logo img {
+  width: 260px;
 }
 
 .navigation {
   text-align: center;
   @extend %sans;
   li {
-    display: inline;
+    display: inline-block;
     font-size: .95em;
-    // font-weight: 900;
     margin: 0 $spacing-xs;
     text-transform: uppercase;
+    vertical-align: middle;
   }
 }
