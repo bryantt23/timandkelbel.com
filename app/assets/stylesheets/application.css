@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require foundation_and_overrides
- *= require slick
  *= require global
+ *= require owl.carousel
+ *= require owl.theme
  */

@@ -49,3 +49,10 @@ $(document).ready(function($, window){
   }
 
 }(jQuery, window));
+
+$(".owl-carousel").owlCarousel({
+  autoPlay : true,
+  slideSpeed : 800,
+  paginationSpeed : 800,
+  singleItem:true
+});
