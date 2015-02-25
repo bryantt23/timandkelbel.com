@@ -8,6 +8,9 @@ FOOTER
 .site__footer {
   background: darken($jazzColor, 10%);
   padding: $spacing-xs 0;
+  .guests & {
+    visibility: hidden;
+  }
 }
 
 .copyright {

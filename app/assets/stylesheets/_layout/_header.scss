@@ -14,7 +14,11 @@ HEADER
   transform: translate3d(0,0,0);
   padding: $spacing-xxs 0;
   @include transition(.2s ease);
+  .guests & {
+    position: static;
+  }
 }
+
 .scrolled {
   .site__header {
     padding: $spacing-xxs/2 0;

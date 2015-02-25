@@ -16,7 +16,7 @@
     :javascript
       try{Typekit.load();}catch(e){}
 
-  %body
+  %body{class: "#{controller_name} #{action_name}"}
 
     = render 'shared/rsvp'
 

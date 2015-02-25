@@ -6,3 +6,16 @@ PAGES
 */
 
 
+/*
+
+GUESTS ------------------------------------- */
+
+.guests {
+  table {
+    margin: 0 0 $spacing-xl;
+    @extend %sans;
+    th, td {
+      font-size: 95%;
+    }
+  }
+}

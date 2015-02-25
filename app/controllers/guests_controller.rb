@@ -16,6 +16,7 @@ class GuestsController < ApplicationController
 
   def index
     @guests = Guest.order(:full_name).all
+    @guest = Guest.new
   end
 
   def new
