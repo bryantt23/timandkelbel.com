@@ -1,14 +1,14 @@
 %header.site__header{ role: 'banner' }
   %nav.site__navigation{ role: 'navigation' }
     %ul.navigation
-      %li= link_to 'Our Story', '#'
-      %li= link_to 'Photos', '#'
-      %li= link_to 'Wedding Party', '#'
+      %li= link_to 'Our Story', '#our-story', data: { scroll: '' }
+      %li= link_to 'Photos', '#photos', data: { scroll: '' }
+      %li= link_to 'Wedding Party', '#wedding-party', data: { scroll: ''}
       %li
         = link_to '/', class: 'logo' do
           = image_tag "timandkelbel_logo.svg"
-      %li= link_to 'Details', '#'
-      %li= link_to 'Gifts', '#'
+      %li= link_to 'Details', '#wedding-details', data: { scroll: '' }
+      %li= link_to 'Gifts', '#gifts', data: { scroll: '' }
       %li
         %button.toggleTopRSVP.small.radius
           RSVP
