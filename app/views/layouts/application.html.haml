@@ -9,7 +9,6 @@
 
     = stylesheet_link_tag "application"
     = javascript_include_tag "vendor/modernizr"
-    = javascript_include_tag "application", 'data-turbolinks-track' => true
     = csrf_meta_tag
 
     // Typekit Code
@@ -19,14 +18,13 @@
 
   %body
 
-    = render 'shared/header'
+    = render 'shared/rsvp'
 
-    = yield
+    .content__wrapper
+      = render 'shared/header'
 
-    = render 'shared/footer'
+      = yield
 
-    / = image_tag "https://goodstufffm.s3.amazonaws.com/uploads/broadcast/image/28/theeastwing_artwork.png"
-    / # = image_tag "https://goodstufffm.s3.amazonaws.com/uploads/broadcast/image/28/theeastwing_artwork.png"
-    / # = image_tag "https://goodstufffm.s3.amazonaws.com/uploads/broadcast/image/28/theeastwing_artwork.png"
+      = render 'shared/footer'
 
-
+    = javascript_include_tag 'application'

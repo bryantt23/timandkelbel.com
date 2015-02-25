@@ -1,3 +1,12 @@
+
+$(".toggleTopRSVP").on("click", function() {
+  $("body").addClass("rsvpShow");
+});
+
+$(".removeTopRSVP").on("click", function() {
+  $("body").removeClass("rsvpShow");
+})
+
 $(document).ready(function($, window){
 
     var $w = $(window);

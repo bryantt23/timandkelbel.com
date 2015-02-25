@@ -1,0 +1,8 @@
+.row
+  .small-12.medium-5.columns.small-centered
+    = simple_form_for @guest do |f|
+      = f.input :full_name
+      = f.input :email
+      = f.input :song
+      = f.input :attending
+      = f.submit class: 'button radius'

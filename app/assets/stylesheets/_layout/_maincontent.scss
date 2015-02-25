@@ -5,10 +5,16 @@ MAIN CONTENT
 
 */
 
+.content__wrapper {
+  .rsvpShow & {
+    @include filter(blur(5px) grayscale(70%));
+  }
+}
+
 .site__statement {
   background: url(image-path("timandkelbel-hero-3.jpg")) no-repeat;
   background-size: cover;
-  padding: 50% 0 2%;
+  padding: 35% 0 2%;
 }
 
 .statement {
@@ -77,3 +83,46 @@ WEDDING DETAILS ---------------------------- */
 .row__details {
   margin-top: $spacing-m;
 }
+
+/*
+GIFTS -------------------------------------- */
+
+.section__gifts {
+  background: $jazzColor;
+  h4 {
+    color: white;
+  }
+  p {
+    color: rgba(white, .85);
+    margin-bottom: $spacing-m;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

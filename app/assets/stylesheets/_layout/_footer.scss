@@ -6,10 +6,11 @@ FOOTER
 */
 
 .site__footer {
-  margin: 0 0 $spacing-s;
+  background: darken($jazzColor, 10%);
+  padding: $spacing-xs 0;
 }
 
 .copyright {
-  color: lighten($bodyColor, 15%);
-  font-size: .85em;
+  color: darken($jazzColor, 20%);
+  font-size: .95em;
 }

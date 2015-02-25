@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '4.1.9'
 gem 'sass-rails', '~> 5.0.0'
+gem 'simple_form', '~> 3.1.0'
 gem 'thin'
 gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc

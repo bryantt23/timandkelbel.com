@@ -1,0 +1,13 @@
+.row
+  - if @guests.present?
+    %table
+      %thead
+        %tr
+          %th Name
+          %th Email Address
+          %th Song
+          %th Attending
+      %tbody
+        = render @guests
+  - else
+    %p No one has RSVP'd yet. Bummer.

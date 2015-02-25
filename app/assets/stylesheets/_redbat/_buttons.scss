@@ -4,3 +4,51 @@ BUTTONS
 ---------------------------------------------------------
 
 */
+
+
+button, .button {
+  @extend %sans;
+  padding: 12px 17px;
+  &.small {
+    padding: 10px 15px;
+  }
+}
+
+button, .button {
+  background: lighten($darkColor, 10%);
+  color: white;
+  @extend %sans;
+  &:hover, &:focus {
+    background: $darkColor;
+  }
+}
+
+.site__header button.small {
+  background: $linkColor;
+  font-size: inherit;
+  margin-bottom: 0;
+  padding: 10px 20px;
+  &:hover, &:focus {
+    background: darken($linkColor, 10%);
+  }
+  &:active {
+    @include transform(scale3d(.9, .9, .9));
+  }
+}
+
+.close-button {
+  background: none;
+  font-size: 4em;
+  line-height: 70%;
+  padding: 0;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  &:hover, &:focus {
+    background: none;
+    color: rgba(white, .8);
+  }
+  &:active {
+    @include transform(scale3d(.9, .9, .9));
+  }
+}
