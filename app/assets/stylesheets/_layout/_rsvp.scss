@@ -21,7 +21,16 @@
   font-size: 10em;
   font-weight: 800;
   letter-spacing: 22px;
+  line-height: 100%;
   text-align: center;
+}
+
+.rsvp__header {
+  margin-bottom: $spacing-l;
+  h2.subheader {
+    color: rgba(white, .7);
+    font-size: 1.2em;
+  }
 }
 
 .new_guest {

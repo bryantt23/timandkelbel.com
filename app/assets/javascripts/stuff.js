@@ -52,7 +52,3 @@ $(".owl-carousel").owlCarousel({
   paginationSpeed : 800,
   singleItem:true
 });
-
-// smoothScroll.init({
-//   offset: 71
-// });

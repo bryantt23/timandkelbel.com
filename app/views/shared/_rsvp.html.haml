@@ -3,7 +3,9 @@
     &times;
   .row
     .small-12.medium-8.columns.small-centered
-      %h1.huge RSVP
+      %header.rsvp__header
+        %h1.huge RSVP
+        %h2.subheader.text-center Kindly respond by April 1, 2015. We look forward to celebrating with you.
       .row
         = simple_form_for @guest do |f|
           = f.input :full_name, wrapper_html: { class: 'small-12 medium-6 columns'}
