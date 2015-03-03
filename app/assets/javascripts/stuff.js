@@ -1,7 +1,3 @@
-smoothScroll.init({
-  offset: 71
-});
-
 $(".toggleTopRSVP").on("click", function() {
   $("body").addClass("rsvpShow");
 });
@@ -55,4 +51,8 @@ $(".owl-carousel").owlCarousel({
   slideSpeed : 800,
   paginationSpeed : 800,
   singleItem:true
+});
+
+smoothScroll.init({
+  offset: 71
 });
