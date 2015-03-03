@@ -32,6 +32,9 @@ HEADER
 .logo img {
   width: 260px;
   @include transition(.2s ease);
+  @include breakpoint(l) {
+    width: 180px;
+  }
 }
 
 .navigation {
@@ -43,6 +46,10 @@ HEADER
     margin: 0 $spacing-xs;
     text-transform: uppercase;
     vertical-align: middle;
+    @include breakpoint(l) {
+      margin: 0 10px;
+      font-size: .85em;
+    }
   }
 }
 

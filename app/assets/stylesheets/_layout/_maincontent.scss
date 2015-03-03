@@ -25,6 +25,9 @@ MAIN CONTENT
   line-height: 130%;
   text-transform: uppercase;
   @extend %sans;
+  @include breakpoint(l) {
+    font-size: 3.2em;
+  }
 }
 
 .statement-sub {
@@ -33,6 +36,9 @@ MAIN CONTENT
   font-weight: 300;
   text-transform: uppercase;
   @extend %sans;
+  @include breakpoint(l) {
+    font-size: 1.5em;
+  }
 }
 
 
@@ -99,6 +105,12 @@ GIFTS -------------------------------------- */
   p {
     color: rgba(white, .85);
     margin-bottom: $spacing-m;
+  }
+}
+
+.bbb-logo {
+  @include breakpoint(m) {
+    margin-bottom: $spacing-xs;
   }
 }
 
