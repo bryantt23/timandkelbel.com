@@ -53,6 +53,6 @@ $(".owl-carousel").owlCarousel({
   singleItem:true
 });
 
-smoothScroll.init({
-  offset: 71
-});
+// smoothScroll.init({
+//   offset: 71
+// });
