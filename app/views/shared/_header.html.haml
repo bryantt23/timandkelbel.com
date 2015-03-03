@@ -1,4 +1,4 @@
-%header.site__header{ role: 'banner' }
+%header{ class: "site__header #{flash.present? ? 'flash-is-present' : '' }", role: 'banner' }
   %nav.site__navigation{ role: 'navigation' }
     %ul.navigation
       %li= link_to 'Story', '#our-story', data: { scroll: '' }
@@ -12,4 +12,3 @@
       %li
         %button.toggleTopRSVP.small.radius
           RSVP
-

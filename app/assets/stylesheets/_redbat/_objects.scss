@@ -45,3 +45,46 @@ Responsive iFrame -------------------------- */
     width: 100%;
     height: 100%;
 }
+
+
+/* Alert Boxes */
+
+.alert-box {
+  padding: $spacing-xs;
+  margin-bottom: 0;
+  font-size: .95em;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  @extend %sans;
+  .close {
+    right: 20px;
+  }
+  &.alert, &.error {
+    background-color: $alertColor;
+    border: none;
+    color: darken($alertColor, 50%);
+    .close {
+      color: darken($alertColor, 40%);
+      opacity: 1;
+    }
+  }
+  &.notice {
+    background-color: $infoColor;
+    border: none;
+    color: darken($infoColor, 50%);
+    .close {
+      color: darken($infoColor, 40%);
+      opacity: 1;
+    }
+  }
+  &.success {
+    background-color: $successColor;
+    border: none;
+    color: darken($successColor, 50%);
+    .close {
+      color: darken($successColor, 40%);
+      opacity: 1;
+    }
+  }
+}

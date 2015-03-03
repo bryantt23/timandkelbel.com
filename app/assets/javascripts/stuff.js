@@ -6,6 +6,13 @@ $(".removeTopRSVP").on("click", function() {
   $("body").removeClass("rsvpShow");
 });
 
+$('body').on('keyup', function(e) {
+    if (e.keyCode === 27) {
+        $('body').removeClass('rsvpShow');
+        return false;
+    }
+});
+
 
 $(document).ready(function($, window){
 
@@ -51,4 +58,8 @@ $(".owl-carousel").owlCarousel({
   slideSpeed : 800,
   paginationSpeed : 800,
   itemsDesktop: [2559, 2]
+});
+
+$("body").on('close.fndtn.alert', function(event) {
+  $("header.site__header").removeClass("flash-is-present");
 });

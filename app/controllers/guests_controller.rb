@@ -4,10 +4,10 @@ class GuestsController < ApplicationController
     @guest = Guest.create guest_params
 
     if @guest.errors.none?
-      redirect_to root_path, flash: { success: 'Thanks for your RSVP!' }
+      redirect_to root_path, flash: { success: 'RSVP submitted. See you soon!' }
     else
       flash[:error] = @guest.errors.full_messages.join(', ')
-      render :new
+      redirect_to root_path, flash: { error: 'Form can’t be blank.' }
     end
   end
 

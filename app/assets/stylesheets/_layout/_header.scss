@@ -17,6 +17,9 @@ HEADER
   .guests & {
     position: static;
   }
+  &.flash-is-present {
+    margin-top: 64px;
+  }
 }
 
 .mobile__header {
