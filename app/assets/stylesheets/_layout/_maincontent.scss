@@ -11,6 +11,10 @@ MAIN CONTENT
   }
 }
 
+body.rsvpShow {
+  overflow: hidden;
+}
+
 .site__statement {
   background: url(image-path("timandkelbel-hero.jpg")) no-repeat;
   background-size: cover;
