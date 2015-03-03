@@ -8,12 +8,9 @@
   top: 0;
   bottom: 0;
   z-index: 9999;
+  overflow: scroll;
   @extend %clearfix;
   @extend %sans;
-  // @include opacity(.9);
-  // @include breakpoint(s) {
-  //   padding: 35% 0;
-  // }
 }
 
 .huge {
@@ -23,6 +20,9 @@
   letter-spacing: 22px;
   line-height: 100%;
   text-align: center;
+  @include breakpoint(s) {
+    font-size: 5em;
+  }
 }
 
 .rsvp__header {
@@ -30,6 +30,12 @@
   h2.subheader {
     color: rgba(white, .7);
     font-size: 1.2em;
+    @include breakpoint(s) {
+      font-size: 1em;
+    }
+  }
+  @include breakpoint(s) {
+    margin-bottom: $spacing-s;
   }
 }
 

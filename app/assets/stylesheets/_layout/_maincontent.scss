@@ -28,6 +28,9 @@ MAIN CONTENT
   @include breakpoint(l) {
     font-size: 3.2em;
   }
+  @include breakpoint(s) {
+    font-size: 1.5em;
+  }
 }
 
 .statement-sub {
@@ -38,6 +41,9 @@ MAIN CONTENT
   @extend %sans;
   @include breakpoint(l) {
     font-size: 1.5em;
+  }
+  @include breakpoint(s) {
+    font-size: 1em;
   }
 }
 
@@ -57,6 +63,11 @@ OUR STORY ---------------------------------- */
       // font-weight: 300;
       text-transform: uppercase;
       @extend %sans;
+    }
+  }
+  p {
+    @include breakpoint(m) {
+      margin: 0 0 $spacing-m;
     }
   }
 }

@@ -21,7 +21,11 @@
     = render 'shared/rsvp'
 
     .content__wrapper
-      = render 'shared/header'
+      .show-for-small-only
+        = render 'shared/mobile_nav'
+
+      .show-for-medium-up
+        = render 'shared/header'
 
       = yield
 

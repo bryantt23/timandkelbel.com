@@ -23,7 +23,7 @@ button, .button {
   }
 }
 
-.site__header button.small {
+.site__header button.small, .mobile__header button.small {
   background: $linkColor;
   font-size: inherit;
   margin-bottom: 0;
@@ -44,11 +44,17 @@ button, .button {
   position: absolute;
   right: 40px;
   top: 30px;
+  z-index: 9999;
   &:hover, &:focus {
     background: none;
     color: rgba(white, .8);
   }
   &:active {
     @include transform(scale3d(.9, .9, .9));
+  }
+  @include breakpoint(s) {
+    font-size: 3em;
+    right: 20px;
+    top: 10px;
   }
 }
