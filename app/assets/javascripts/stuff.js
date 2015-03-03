@@ -50,5 +50,5 @@ $(".owl-carousel").owlCarousel({
   autoPlay : true,
   slideSpeed : 800,
   paginationSpeed : 800,
-  singleItem:true
+  itemsDesktop: [2559, 2]
 });
