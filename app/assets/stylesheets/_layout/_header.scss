@@ -31,6 +31,9 @@ HEADER
   }
   .logo img {
     width: 200px;
+    @include breakpoint(l) {
+      width: 160px;
+    }
   }
 }
 
