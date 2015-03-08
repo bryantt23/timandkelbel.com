@@ -124,6 +124,12 @@ GIFTS -------------------------------------- */
     color: rgba(white, .85);
     margin-bottom: $spacing-m;
   }
+  a {
+    opacity: .7;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .bbb-logo {
