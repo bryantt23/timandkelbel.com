@@ -11,6 +11,9 @@ table {
 
 .page__section {
   padding: $spacing-xl 0;
+  &.section__wedding-details {
+    padding: $spacing-xl 0 0;
+  }
 }
 
 .with-picture-bg {

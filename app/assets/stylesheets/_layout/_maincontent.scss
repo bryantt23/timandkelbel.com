@@ -112,6 +112,13 @@ WEDDING DETAILS ---------------------------- */
   margin-top: $spacing-m;
 }
 
+.map-wrapper {
+  margin-top: $spacing-l;
+  iframe {
+    display: block;
+  }
+}
+
 /*
 GIFTS -------------------------------------- */
 
