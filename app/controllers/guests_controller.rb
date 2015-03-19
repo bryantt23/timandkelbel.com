@@ -17,6 +17,7 @@ class GuestsController < ApplicationController
   def index
     @guests = Guest.order('created_at DESC').all
     @guest = Guest.new
+    @attending_total = @guests.sum(:attending)
   end
 
   def new

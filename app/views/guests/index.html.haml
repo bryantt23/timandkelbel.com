@@ -9,5 +9,12 @@
           %th Attending
       %tbody
         = render @guests
+        %tr
+          %td
+            %strong Total
+          %td
+          %td
+          %td{ style: 'text-align: right;'}
+            %strong= @attending_total
   - else
     %p No one has RSVP'd yet. Bummer.
