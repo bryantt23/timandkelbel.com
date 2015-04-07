@@ -5,12 +5,4 @@
     .small-12.medium-10.large-8.columns.small-centered
       %header.rsvp__header
         %h1.huge RSVP
-        %h2.subheader.text-center Kindly respond by April 1, 2015. We look forward to celebrating with you!
-      .row
-        = simple_form_for @guest do |f|
-          = f.input :full_name, wrapper_html: { class: 'small-12 medium-6 columns'}
-          = f.input :email, wrapper_html: { class: 'small-12 medium-6 columns'}
-          = f.input :song, hint: 'Give us the song name and artist.', wrapper_html: { class: 'small-12 medium-9 columns'}, label: 'What Song Would You Dance To?'
-          = f.input :attending, label: '№ Attending', wrapper_html: { class: 'small-5 medium-3 columns'}, input_html: { maxlength: 1 }
-          .small-12.columns
-            = f.button :submit, 'Submit', class: 'radius'
+        %h2.subheader.text-center The RSVP date has passed. If you have any questions, feel free to send us an email at hello@timandkelbel.com.
